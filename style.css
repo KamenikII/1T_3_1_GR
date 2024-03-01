@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* general */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 16px 48px;
+}
+
+/* header */
+.top-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
+.about-paragraph {
+    max-width: 504px;
+}
+
+h1 {
+    /*т.к. h1 может быть только один раз, то можно обратиться на прямую?*/
+    font-size: 64px;
+    color: #1F3F68;
+    font-weight: 300;
+    max-width: 504px;
+    margin-top: 24px;
+}
+
+.about-text {
+    font-size: 16px;
+    color: #1F3F68;
+    margin-top: 24px;
+}
+
+.about-button {
+    font-size: 16px;
+    align-items: Center;
+    color: #FFFFFF;
+    background-color: #5A98D0;
+    border-radius: 10px;
+    border: none;
+    margin-top: 48px;
+    min-width: 220px;
+    min-height: 56px;
+}
+
+.section-name {
+    margin-top: 32px;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    color: #000000;
+}
+
+.service-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 430px;
+    margin-top: 32px;
+    flex-grow: 1;
+}
+
+.service-card {
+    max-width: 430px;
+    flex-grow: 1;
+}
+
+.service-avatar {
+    text-align: center;
+}
+
+.service-title {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1F3F68;
+    max-width: 340px;
+}
+
+.service-paragraph {
+    margin-top: 8px;
+    margin-bottom: 48px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1F3F68;
+    max-width: 320px;
+}
+
+.service-more-link {
+    color: #5A98D0;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+}
+
+.projects-container {
+    align-content: center;
+    margin-top: 32px;
+}
+
+.projects-description {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #222222;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* картинки с текстом */
+.project-card {
+    position: relative;
+    padding: 8px;
+}
+
+.project-card img,
+.project-cards-bottom img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-cards-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1365;
+}
+
+.project-text {
+    font-weight: 400;
+    font-size: 32px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+}
+
+.bottom-text {
+    left: 20px;
+}
+
+/* footer */
+.basement {
+    background-color: #316099;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.interested-footer {
+    margin: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.interested-paragraph {
+    max-width: 495px;
+}
+
+.interested-text {
+    margin-top: 16px;
+}
+
+.contact-button {
+    background-color: #5A98D0;
+    border: none;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    width: 237px;
+    height: 56px;
+    color: #FFFFFF;
+}
+
+.contact-container {
+    margin: 48px;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.rights {
+    margin-top: 48px;
+    margin-left: 48px;
+    margin-right: 48px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 40%;
+}
