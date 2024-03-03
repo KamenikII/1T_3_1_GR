@@ -56,7 +56,6 @@ h1:hover,
 /* main */
 .about {
     display: flex;
-    flex-wrap: wrap;
     flex-grow: 1;
     margin-top: 32px;
     justify-content: space-between;
@@ -93,12 +92,27 @@ h1 {
     min-height: 56px;
 }
 
+.about-img {
+    max-height: 481px;
+    max-width: 553px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-cards {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .section-name {
     margin-top: 32px;
     font-size: 36px;
     font-weight: 300;
-    text-align: center;
     color: #000000;
+    text-align: center;
 }
 
 .service-card-list {
@@ -106,17 +120,22 @@ h1 {
     flex-wrap: wrap;
     min-width: 430px;
     margin-top: 32px;
-    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .service-card {
     max-width: 430px;
-    flex-grow: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
 }
 
 
 .service-avatar {
-    text-align: center;
+    align-self: center;
 }
 
 .service-title {
@@ -125,6 +144,7 @@ h1 {
     font-weight: 400;
     color: #1F3F68;
     max-width: 340px;
+    text-align: center;
 }
 
 .service-paragraph {
@@ -134,6 +154,7 @@ h1 {
     font-weight: 400;
     color: #1F3F68;
     max-width: 320px;
+    text-align: center;
 }
 
 .service-more-link {
@@ -152,12 +173,11 @@ h1 {
 .projects-description {
     margin-top: 16px;
     margin-bottom: 32px;
+    min-width: 343px;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
     color: #222222;
-    padding-left: 150px;
-    padding-right: 150px;
 }
 
 /* картинки с текстом */
@@ -204,6 +224,7 @@ h1 {
     margin: 48px;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .interested-paragraph {
@@ -218,9 +239,10 @@ h1 {
     background-color: #5A98D0;
     border: none;
     text-align: center;
+    align-self: center;
     font-size: 26px;
     font-weight: 400;
-    width: 237px;
+    min-width: 237px;
     height: 56px;
     color: #FFFFFF;
 }
@@ -231,7 +253,7 @@ h1 {
 
 .contact-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
 }
 
@@ -292,5 +314,81 @@ h1 {
     100% {
         -webkit-transform: scale(1.05);
         transform: scale(1.05);
+    }
+}
+
+
+
+@media(max-width: 1200px) {
+    .service-card-list {
+        max-width: 340px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .section-cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .about-img {
+        max-width: 336px;
+        max-height: 292px;
+    }
+}
+
+@media(max-width: 790px) {
+    .container {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .section-name {
+        font-size: 24px;
+    }
+
+    .project-text {
+        font-size: 16px;
+    }
+
+    .about-img {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .about {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-list {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .contact-list>li {
+        margin-top: 20px;
+    }
+
+    .interested-footer {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .project-cards-bottom {
+        flex-wrap: wrap;
     }
 }
