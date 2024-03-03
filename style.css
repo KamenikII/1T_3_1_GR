@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     /* border: 1px solid black; */
 }
 
@@ -15,6 +17,35 @@ body {
     margin: 0 auto;
     padding: 16px 48px;
 }
+
+h1:hover,
+.about-text:hover {
+    color: #5A98D0;
+}
+
+.footer-title:hover,
+.interested-text:hover {
+    color: lightgray;
+}
+
+.section-name:hover,
+.projects-description:hover,
+.service-more-link:hover {
+    color: #1F3F68;
+}
+
+.about-button:hover,
+.contact-button:hover {
+    -webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.service-card:hover,
+.project-card:hover {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
 
 /* header */
 .top-panel {
@@ -68,13 +99,7 @@ h1 {
     font-weight: 300;
     text-align: center;
     color: #000000;
-    /* -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; */
 }
-
-/* .section-name:hover {
-    color: #1F3F68;
-} */
 
 .service-card-list {
     display: flex;
@@ -88,8 +113,6 @@ h1 {
     max-width: 430px;
     flex-grow: 1;
 }
-
-.service-card:hower {}
 
 
 .service-avatar {
@@ -220,4 +243,54 @@ h1 {
     font-size: 16px;
     font-weight: 400;
     opacity: 40%;
+}
+
+
+
+@-webkit-keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes scale-down-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
 }
