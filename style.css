@@ -13,7 +13,6 @@ body {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    background-color: #fff;
     padding: 16px 48px;
 }
 
@@ -69,7 +68,13 @@ h1 {
     font-weight: 300;
     text-align: center;
     color: #000000;
+    /* -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
 }
+
+/* .section-name:hover {
+    color: #1F3F68;
+} */
 
 .service-card-list {
     display: flex;
@@ -83,6 +88,9 @@ h1 {
     max-width: 430px;
     flex-grow: 1;
 }
+
+.service-card:hower {}
+
 
 .service-avatar {
     text-align: center;
@@ -166,6 +174,7 @@ h1 {
     background-color: #316099;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
+    max-width: 100%;
 }
 
 .interested-footer {
